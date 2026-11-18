@@ -1,10 +1,10 @@
 import { EyewearProduct, FaceShapeId, LensOption } from '../types/eyewear';
 
-export const HERO_CAMPAIGN_IMAGE =
-  '/src/assets/images/hero_eyewear_campaign_1794809670084.jpg';
+const assetUrl = (file: string) => `${import.meta.env.BASE_URL}src/assets/images/${file}`;
 
-export const CRAFT_ATELIER_IMAGE =
-  '/src/assets/images/craft_atelier_frames_1794809673419.jpg';
+export const HERO_CAMPAIGN_IMAGE = assetUrl('hero_eyewear_campaign_1794809670084.jpg');
+
+export const CRAFT_ATELIER_IMAGE = assetUrl('craft_atelier_frames_1794809673419.jpg');
 
 export const LENS_OPTIONS: Record<'sunglasses' | 'optical', LensOption[]> = {
   sunglasses: [
@@ -52,7 +52,7 @@ export const EYEWEAR_PRODUCTS: EyewearProduct[] = [
     categoryLabel: 'Kính mát',
     material: 'Acetate Mazzucchelli Ý',
     price: 3450000,
-    image: '/src/assets/images/product_acetate_tortoise_1794809670849.jpg',
+    image: assetUrl('product_acetate_tortoise_1794809670849.jpg'),
     dimensions: { lensWidth: 52, bridge: 20, temple: 145 },
     weightGrams: 34,
     faceShapes: ['round', 'oval'],
@@ -74,7 +74,7 @@ export const EYEWEAR_PRODUCTS: EyewearProduct[] = [
     categoryLabel: 'Titanium Nhật Bản',
     material: 'Beta-Titanium Sabae',
     price: 4200000,
-    image: '/src/assets/images/product_titanium_round_1794809670724.jpg',
+    image: assetUrl('product_titanium_round_1794809670724.jpg'),
     dimensions: { lensWidth: 48, bridge: 21, temple: 145 },
     weightGrams: 13,
     faceShapes: ['square', 'heart', 'oval'],
@@ -96,7 +96,7 @@ export const EYEWEAR_PRODUCTS: EyewearProduct[] = [
     categoryLabel: 'Kính mát',
     material: 'Hợp kim Titanium & Thép y tế',
     price: 3850000,
-    image: '/src/assets/images/product_aviator_smoke_1794809671184.jpg',
+    image: assetUrl('product_aviator_smoke_1794809671184.jpg'),
     dimensions: { lensWidth: 55, bridge: 17, temple: 146 },
     weightGrams: 22,
     faceShapes: ['square', 'oval', 'heart'],
@@ -116,7 +116,7 @@ export const EYEWEAR_PRODUCTS: EyewearProduct[] = [
     categoryLabel: 'Kính mát',
     material: 'Acetate Cellulose Tự nhiên',
     price: 3290000,
-    image: '/src/assets/images/product_cateye_ivory_1794809671892.jpg',
+    image: assetUrl('product_cateye_ivory_1794809671892.jpg'),
     dimensions: { lensWidth: 51, bridge: 19, temple: 142 },
     weightGrams: 29,
     faceShapes: ['round', 'square', 'oval'],
@@ -138,7 +138,7 @@ export const EYEWEAR_PRODUCTS: EyewearProduct[] = [
     categoryLabel: 'Gọng cận',
     material: 'Acetate Takiron Nhật Bản',
     price: 2650000,
-    image: '/src/assets/images/product_clear_crystal_1794809672527.jpg',
+    image: assetUrl('product_clear_crystal_1794809672527.jpg'),
     dimensions: { lensWidth: 50, bridge: 20, temple: 145 },
     weightGrams: 26,
     faceShapes: ['round', 'oval', 'heart'],
@@ -159,7 +159,7 @@ export const EYEWEAR_PRODUCTS: EyewearProduct[] = [
     categoryLabel: 'Gọng cận',
     material: 'Acetate 8mm Phay Thủ Công',
     price: 3150000,
-    image: '/src/assets/images/craft_atelier_frames_1794809673419.jpg',
+    image: assetUrl('craft_atelier_frames_1794809673419.jpg'),
     dimensions: { lensWidth: 47, bridge: 22, temple: 145 },
     weightGrams: 28,
     faceShapes: ['square', 'heart', 'oval'],
