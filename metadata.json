@@ -1,0 +1,8 @@
+{
+  "name": "SOLIS OPTIQUE — Mắt Kính Thời Trang & Thủ Công",
+  "description": "Cửa hàng mắt kính thời trang thiết kế thủ công từ Acetate Nhật Bản và Titanium siêu nhẹ, tích hợp tư vấn dáng mặt và đặt lịch đo khúc xạ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
